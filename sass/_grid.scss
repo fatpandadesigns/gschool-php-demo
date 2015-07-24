@@ -1,0 +1,28 @@
+/* Columns & Row */
+.row {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  @include clearfix;
+}
+
+.column {
+  $gutter: 2%;
+
+  float: left;
+  margin-right: $gutter;
+
+  &.two-third {
+    width: (((100% / 3) * 2) - ($gutter / 2)); // 65%
+  }
+  &.one-half {
+    width: ((100% / 2) - ($gutter / 2)); // 49%
+  }
+  &.one-third {
+    width: ((100% / 3) - ($gutter / 2)); // 32%
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

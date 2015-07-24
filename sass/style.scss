@@ -1,0 +1,87 @@
+* { box-sizing: border-box; }
+
+
+// Imports
+@import 'colors';
+@import 'mixins';
+@import 'grid';
+
+@import 'header';
+@import 'nav';
+@import 'hero';
+
+
+
+
+
+
+
+
+
+/* ----- Styles Here ----- */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Open Sans', helvetica, sans-serif;
+}
+
+a {
+  @include ease;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Google Map */
+iframe {
+  max-width: 100%;
+}
+
+
+
+/* Footer */
+footer {
+  background: #ccc;
+  margin-top: 60px;
+  padding: 5px 0;
+  font-size: 11px;
+  text-align: center;
+}
+
+
+
+/* Responsive */
+@media (max-width: 500px) {
+  header {
+    text-align: center;
+  }
+
+  .logo {
+    float: none;
+    width: 80px;
+  }
+
+  header nav {
+    float: none;
+    text-align: center;
+  }
+
+  .column {
+    width: 100% !important;
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,16 @@
+/* Hero */
+.hero {
+  background: #ccc;
+  background-image: url('https://unsplash.imgix.net/uploads/1411589183965bdf6e141/5f468e98?fit=crop&fm=jpg&h=700&q=75&w=1050');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  h1 {
+    margin: 0;
+    padding: 120px 0;
+    color: white;
+    text-shadow: 0 0 10px #444;
+    text-align: center;
+  }
+}
