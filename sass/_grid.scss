@@ -25,4 +25,9 @@
   &:last-of-type {
     margin-right: 0;
   }
+
+  @include breakpoint($phone) {
+    width: 100% !important;
+    margin-right: 0;
+  }
 }

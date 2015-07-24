@@ -4,6 +4,11 @@ nav {
   header & {
     float: right;
     text-align: right;
+
+    @include breakpoint($phone) {
+      float: none;
+      text-align: center;
+    }
   }
 
   a {

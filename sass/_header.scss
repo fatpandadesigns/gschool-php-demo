@@ -4,6 +4,10 @@ header {
   padding: 10px;
   margin-bottom: 20px;
 
+  @include breakpoint($phone) {
+    text-align: center;
+  }
+
   /* Cancel the header margin on home page. */
   body#home & {
     margin-bottom: 0;
@@ -17,4 +21,9 @@ header {
 .logo {
   float: left;
   width: 65px;
+
+  @include breakpoint($phone) {
+    float: none;
+    width: 80px;
+  }
 }

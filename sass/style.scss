@@ -6,9 +6,12 @@
 @import 'mixins';
 @import 'grid';
 
+@import 'links';
 @import 'header';
 @import 'nav';
 @import 'hero';
+@import 'map';
+@import 'footer';
 
 
 
@@ -25,63 +28,5 @@ body {
   font-family: 'Open Sans', helvetica, sans-serif;
 }
 
-a {
-  @include ease;
-
-  &:hover {
-    color: $orange;
-  }
-}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Google Map */
-iframe {
-  max-width: 100%;
-}
-
-
-
-/* Footer */
-footer {
-  background: #ccc;
-  margin-top: 60px;
-  padding: 5px 0;
-  font-size: 11px;
-  text-align: center;
-}
-
-
-
-/* Responsive */
-@media (max-width: 500px) {
-  header {
-    text-align: center;
-  }
-
-  .logo {
-    float: none;
-    width: 80px;
-  }
-
-  header nav {
-    float: none;
-    text-align: center;
-  }
-
-  .column {
-    width: 100% !important;
-    margin-right: 0;
-  }
-}
